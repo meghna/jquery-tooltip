@@ -44,6 +44,12 @@
 		},
 		block: function() {
 			$.tooltip.blocked = !$.tooltip.blocked;
+		},
+		restore: function(elem) {
+		  $(elem)
+		    .unbind('mouseover', save)
+		    .unbind('mouseout', doHide)
+		    .unbind('click', hide);
 		}
 	};
 
