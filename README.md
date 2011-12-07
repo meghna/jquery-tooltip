@@ -2,6 +2,15 @@ This is a fork of http://bassistance.de/jquery-plugins/jquery-plugin-tooltip/ (v
 
 FWIW, there is a new Tooltip widget under active development in jQuery UI and was added as part of the UI 1.9 Milestone 1 release. Read this [blog post] (http://blog.jqueryui.com/2010/05/jquery-ui-19m1-tooltip/)
 
+# v1.4
+Added an option:
+```javascript
+{
+  hideDelay: 30
+}
+```
+The number of milliseconds before the tooltip disappears on mouseout. Defaults to 30ms. A value of 0 will make it disappear immediately. This is useful, if you have links in your tooltip content and would like the user to be able to click on them.
+
 # Documentation (v1.3)
 For documentation, please refer to http://docs.jquery.com/Plugins/Tooltip
 
